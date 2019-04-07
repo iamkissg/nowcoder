@@ -2,6 +2,8 @@ import sys
 import re
 from string import ascii_letters
 
+"""ACCEPT"""
+
 Uppers = list(ascii_letters[-26:])
 Lowers = list(ascii_letters[:26])
 

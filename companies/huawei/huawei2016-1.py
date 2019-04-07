@@ -6,7 +6,7 @@ from queue import deque
 for line in sys.stdin:
     n = int(line.strip())
     if n > 1000:
-    n = 999
+        n = 999
     a = deque(range(n))
     # print('a', a)
     c = 0  # counter
