@@ -1,4 +1,13 @@
 # -*- coding:utf-8 -*-
+
+
+"""
+最简单的解法是, 遍历数组, 找到最小元素, 但是没有把"非递减数组的旋转数组"这一特点利用起来.
+非递减数组的旋转数组, 在最小元素之前的元素, 都比之后的元素大. 且前后两个数组都是有序的.
+对于有序数组的有效搜索算法是, 二分查找, 用于快速定位最小元素所在区间.
+"""
+
+
 class Solution:
     def minNumberInRotateArray(self, rotateArray):
         # write code here

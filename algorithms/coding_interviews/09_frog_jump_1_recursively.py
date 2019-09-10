@@ -1,4 +1,9 @@
 # -*- coding:utf-8 -*-
+
+
+"""运行超时:您的程序未能在规定时间内运行结束，请检查是否循环有错或算法复杂度过大。"""
+
+
 class Solution:
     def jumpFloor(self, number):
         # write code here
@@ -7,11 +12,8 @@ class Solution:
         elif number == 2:
             return 2
         elif number > 2:
-            a, b = 1, 2
-            for _ in range(2, number):
-                a, b = b, a+b
-            return b
+            return self.jumpFloor(number-1)+self.jumpFloor(number-2)
 
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.jumpFloor(3))
+    print(sol.jumpFloor(10))

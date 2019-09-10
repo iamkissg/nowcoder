@@ -1,4 +1,12 @@
 # -*- coding:utf-8 -*-
+
+
+'''
+位操作, 左右移动都可行的情况下, 右移更好, 不必担心符号问题
+同理, 移动标志符, 而不是原数比移动原数更好.
+'''
+
+
 class Solution:
     def NumberOf1(self, n):
         # write code here
