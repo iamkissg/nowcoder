@@ -22,11 +22,12 @@ def draw(mat, a, b, c):
     #         mat[a][b+i] = c-i
     for i in range(len(mat)):
         for j in range(len(mat[0])):
-            if abs(a-i) >= c-1:
+            dis_row = abs(a-i)
+            dis_col = abs(b-j)
+            if dis_col + dis_row >= c:
                 continue
-            elif abs(b-j) >= c-1:
-                continue
-            mat[i][j] = min([c-abs(a-i), c-abs(b-j)])
+            count = c - dis_col - dis_row
+            mat[i][j] = count
         
 if __name__ == "__main__":
 
