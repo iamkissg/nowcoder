@@ -2,6 +2,8 @@
 # __date__ = 20190920
 
 
+# 100% passed
+
 
 def is_valid(i):
     return 1 <= i <= 1024

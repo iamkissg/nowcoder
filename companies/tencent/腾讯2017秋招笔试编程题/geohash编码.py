@@ -1,3 +1,6 @@
+
+# 100% passed
+
 def geo_hashing(num):
     start = -90
     end = 90
